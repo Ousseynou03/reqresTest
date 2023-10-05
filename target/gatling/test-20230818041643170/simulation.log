@@ -1,0 +1,5 @@
+RUN	REQRES.Test	test	1692332203170	 	3.9.5
+USER	Test d'API	START	1692332204960
+REQUEST		Obtenir les détails de l'utilisateur	1692332204949	1692332205205	OK	 
+ERROR	Obtenir l'utilisateur par ID: Failed to build request: No attribute named 'id' is defined 	1692332205279
+USER	Test d'API	END	1692332205286

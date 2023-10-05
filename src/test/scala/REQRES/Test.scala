@@ -24,20 +24,17 @@ class Test  extends  Simulation{
         .check(status is 200)
       .check(jsonPath("$.data[0].id").saveAs("userId")))
     .exec { session =>
-      val userId = session("userId").as[String]
-      session.set("id", userId)
-    }
-    .exec { session =>
-      println("id = " + session("id").as[String])
+      println("id = " + session("userId").as[String])
       session
     }
     .exec(http("Obtenir l'utilisateur par ID")
-      .get("/api/users/${id}")
+      .get("/api/users/#{userId}")
   )
 
   setUp(
-    scn.inject(atOnceUsers(1))
+    scn.inject(atOnceUsers(1)),
   ).protocols(httpProtocol)
+    //.maxDuration(3 minutes)
 
 
 

@@ -1,0 +1,5 @@
+RUN	REQRES.Test	test	1691527015822	test récupération de données	3.9.5
+USER	Test d'API	START	1691527016992
+REQUEST		Obtenir les détails de l'utilisateur	1691527016987	1691527017320	OK	 
+REQUEST		Obtenir l'utilisateur par ID	1691527017380	1691527017558	OK	 
+USER	Test d'API	END	1691527017563

@@ -1,0 +1,10 @@
+{
+  "simulation": "REQRES.Test",
+  "simulationId": "test-20230818041746190",
+  "start": 1692332267628,
+  "description": "",
+  "scenarios": ["Test d'API"],
+  "assertions": [
+
+  ]
+}

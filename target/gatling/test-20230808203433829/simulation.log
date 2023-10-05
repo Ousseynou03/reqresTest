@@ -1,0 +1,5 @@
+RUN	REQRES.Test	test	1691526873829	test récupération de données	3.9.5
+USER	Test d'API	START	1691526874931
+REQUEST		Obtenir les détails de l'utilisateur	1691526874923	1691526875284	KO	jsonPath(#.data[0].id).find.exists extraction crashed: '$' expected but '#' found
+ERROR	Obtenir l'utilisateur par ID: Failed to build request: No attribute named 'id' is defined 	1691526875334
+USER	Test d'API	END	1691526875336
